@@ -1,0 +1,24 @@
+pluginManagement {
+    repositories {
+        gradlePluginPortal()
+        google()
+        mavenCentral()
+    }
+}
+dependencyResolutionManagement {
+    repositoriesMode.set(RepositoriesMode.FAIL_ON_PROJECT_REPOS)
+    repositories {
+        google()
+        mavenCentral()
+        maven { url 'https://jitpack.io' }
+        maven { url 'https://mvnrepository.com/artifact/org.kodein.di/kodein-di-generic-jvm' }
+        jcenter()
+        maven { url 'https://dl.bintray.com/kodein-framework/Kodein-DI' }
+        maven {
+            // For Room Persistence Library
+            url "https://maven.google.com"
+        }
+    }
+}
+rootProject.name = "Forecast"
+include ':app'
